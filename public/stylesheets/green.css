@@ -111,6 +111,10 @@ hr {
     border: none;
 }
 
+.delete-form {
+    display: inline;
+}
+
 #input-comment {
     width: 50%;
 }
@@ -122,10 +126,6 @@ hr {
 
 #back {
     font-size: 1em;
-}
-
-#delete-form {
-    display: inline;
 }
 
 /* Google Maps */

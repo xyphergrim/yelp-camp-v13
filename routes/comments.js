@@ -80,6 +80,7 @@ router.delete("/:comment_id", middleware.checkCommentOwnership, function(req, re
         } else {
             Campground.findByIdAndUpdate(req.params.id, {$pull: {comments: req.params.comment_id}}, 
             function(err,data){
+                console.log("Inside and updating campground relation");
                 if(err){
                     console.log(err);
                 } else {

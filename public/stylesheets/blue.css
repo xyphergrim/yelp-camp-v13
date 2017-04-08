@@ -112,8 +112,8 @@ hr {
     border: none;
 }
 
-.fa-star:hover {
-    color: yellow;
+.delete-form {
+    display: inline;
 }
 
 #input-comment {
@@ -127,10 +127,6 @@ hr {
 
 #back {
     font-size: 1em;
-}
-
-#delete-form {
-    display: inline;
 }
 
 /* Google Maps */

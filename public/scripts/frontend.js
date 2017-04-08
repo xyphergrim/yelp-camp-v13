@@ -108,7 +108,7 @@ $(document).ready(function(){
     $("#theme-btn").click(function(event){
        // stop the form from submitting
        event.preventDefault();
-       
+
        // update the user's theme in the database and update the theme on the page
        $.get("/theme", function(themeColor) {
            $("#theme-css").attr("href", "/stylesheets/"+themeColor+".css");
@@ -126,5 +126,18 @@ $(document).ready(function(){
             $("#favorite-btn").toggleClass("favorite-btn-on");
             // console.log(data);
         });
+    });
+
+    $("#delete-comment-form").submit(function(event){
+        event.preventDefault();
+
+        var action = $(this).attr("action");
+        var r = confirm("Delete your comment for real?");
+
+        if(r){ $.post(action, function(data){}); } 
+
+        // confirm("Delete your comment for real?", "Confirmation", function(r){
+        //     if(r){ $.post(action, function(data){}); }
+        // });
     });
 });
