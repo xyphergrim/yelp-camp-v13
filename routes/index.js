@@ -102,8 +102,8 @@ router.get("/favorites/:id", function(req, res){
             user.favorites.splice(user.favorites.indexOf("/campgrounds/"+req.params.id), 1);
         }
         user.save();
-        // res.redirect("/campgrounds/show");
-        console.log("Favorites: " + user.favorites);
+        
+        // console.log("Favorites: " + user.favorites);
         res.status(200).json('Success!');
     });
 });

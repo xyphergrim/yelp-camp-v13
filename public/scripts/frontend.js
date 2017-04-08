@@ -108,6 +108,7 @@ $(document).ready(function(){
     $("#theme-btn").click(function(event){
        // stop the form from submitting
        event.preventDefault();
+       
        // update the user's theme in the database and update the theme on the page
        $.get("/theme", function(themeColor) {
            $("#theme-css").attr("href", "/stylesheets/"+themeColor+".css");
@@ -116,12 +117,14 @@ $(document).ready(function(){
     
     $("#favorite-form").submit(function(event){
         event.preventDefault();
-        alert("submit works!");
+        // alert("submit works!");
+
         var action = $(this).attr("action");
-        console.log(action);
+        // console.log(action);
+
         $.get(action, function(data){
             $("#favorite-btn").toggleClass("favorite-btn-on");
-            console.log(data);
+            // console.log(data);
         });
     });
 });
