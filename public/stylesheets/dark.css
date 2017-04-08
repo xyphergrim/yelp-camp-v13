@@ -115,10 +115,6 @@ hr {
     background-color: #337ab7;
 }
 
-.fa-star:hover {
-    color: yellow;
-}
-
 #input-comment {
     width: 50%;
 }

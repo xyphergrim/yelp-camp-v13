@@ -1,4 +1,13 @@
+.fa-star:hover {
+	color: yellow;
+}
+
 .favorite-btn-on {
     color: yellow;
     border: none;
+    outline: none;
+}
+
+#favorite-btn {
+	outline: none;
 }
